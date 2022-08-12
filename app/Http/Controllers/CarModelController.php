@@ -17,7 +17,7 @@ class CarModelController extends Controller
     {
         $models = CarModel::all();
         
-        return view('admin.models.index')->with('models',$models);
+        return view('admin.Models.index')->with('models',$models);
     }
 
     /**
