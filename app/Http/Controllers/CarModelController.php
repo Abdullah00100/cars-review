@@ -4,7 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\CarModel;
-use App\Models\Car;
+use App\Models\car;
 
 class CarModelController extends Controller
 {
@@ -27,7 +27,7 @@ class CarModelController extends Controller
      */
     public function create()
     {
-        $cars = Car::all();
+        $cars = car::all();
 
         return view('admin/models/create')->with('cars',$cars);
 
