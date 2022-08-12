@@ -29,7 +29,7 @@ class CarModelController extends Controller
     {
         $cars = car::all();
 
-        return view('admin/models/create')->with('cars',$cars);
+        return view('admin/Models/create')->with('cars',$cars);
 
     }
 
