@@ -15,6 +15,7 @@ class CreateHeadquartersTable extends Migration
     {
         Schema::create('headquarters', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('user_id');
             $table->unsignedInteger('car_id');
             $table->string('headquarters');
             $table->string('country');

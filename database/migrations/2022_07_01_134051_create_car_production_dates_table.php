@@ -15,6 +15,7 @@ class CreateCarProductionDatesTable extends Migration
     {
         Schema::create('car_production_dates', function (Blueprint $table) {
             $table->id();
+            $table->integer('user_id');
             $table->unsignedInteger('model_id');
             $table->date('created_at');
             $table->foreign('model_id')

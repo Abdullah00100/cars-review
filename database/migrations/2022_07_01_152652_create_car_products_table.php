@@ -16,6 +16,7 @@ class CreateCarProductsTable extends Migration
         Schema::create('car_product', function (Blueprint $table) {
             $table->Integer('car_id')->unsigned();
             $table->Integer('product_id')->unsigned();
+            $table->integer('user_id');
             
             $table->foreign('car_id')
             ->references('id')
