@@ -24,7 +24,7 @@
         @foreach($engines as $engine)
             <tr>
                 <td>{{$engine->engine_name}}</td>
-                <td>{{ $engine->carmodels->model_name}}</td>
+                <td>{{ $engine->carModels->model_name}}</td>
                 <td>
                 @if(isset(Auth::user()->id) && Auth::user()->id == $engine->user_id || Auth::user()->role_as == 1) 
 
